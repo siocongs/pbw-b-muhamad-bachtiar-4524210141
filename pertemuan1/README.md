@@ -24,7 +24,7 @@ Pada Pertemuan 1, tugas yang dikerjakan meliputi:
 
 ## File Program
 
-[tugas1.php](pertemuan1/tugas1.php)
+[tugas1.php](tugas1.php)
 
 ---
 
@@ -32,7 +32,7 @@ Pada Pertemuan 1, tugas yang dikerjakan meliputi:
 
 Screenshot berikut menunjukkan program sebelum dilakukan modifikasi.
 
-![Screenshot Sebelum](pertemuan1/screenshots/sebelum.png)
+![Screenshot Sebelum](screenshots/sebelum.png)
 
 ---
 
@@ -40,7 +40,7 @@ Screenshot berikut menunjukkan program sebelum dilakukan modifikasi.
 
 Screenshot berikut menunjukkan program setelah dilakukan modifikasi.
 
-![Screenshot Sesudah](pertemuan1/screenshots/sesudah.png)
+![Screenshot Sesudah](screenshots/sesudah.png)
 
 ---
 
@@ -64,7 +64,7 @@ Tampilan dibagi menjadi beberapa card untuk memisahkan bagian kalkulator, biodat
 
 ## Screenshot Validasi IPK
 
-![Validasi IPK](pertemuan1/screenshots/validasi-ipk.png)
+![Validasi IPK](screenshots/validasi-ipk.png)
 
 ---
 
