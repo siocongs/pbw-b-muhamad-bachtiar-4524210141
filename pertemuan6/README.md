@@ -24,7 +24,7 @@ tugas pertemuan 6/
 └── README.md
 ```
 
-## Modifikasi Bermakna
+## Modifikasi yang dilakukan
 1. **Pencarian data mahasiswa** — `index.php` menyediakan pencarian berdasarkan NIM, nama, atau program studi. Query memakai prepared statement.
 2. **Validasi dan keamanan input** — `store.php` dan `update.php` memvalidasi email, tahun angkatan, serta IPK 0–4 di sisi server; query tambah/ubah/hapus memakai prepared statement.
 3. **Predikat IPK otomatis** — `index.php` menampilkan predikat berdasarkan IPK: Sangat Baik (≥3,50), Baik (≥3,00), Cukup (≥2,00), atau Perlu Evaluasi.
@@ -39,16 +39,29 @@ tugas pertemuan 6/
 5. **`edit.php`, `update.php`, dan `delete.php` — ubah/hapus:** `edit.php` mengambil data sesuai NIM, `update.php` menjalankan UPDATE, dan `delete.php` menjalankan DELETE setelah menerima POST.
 
 ## Screenshot Sebelum dan Sesudah
-Simpan screenshot hasil uji ke folder `screenshots/` dengan nama berikut:
-- `screenshots/sebelum.png` — tampilan program asli sebelum modifikasi.
-- `screenshots/sesudah.png` — tampilan program setelah modifikasi, sebaiknya memperlihatkan pencarian dan kolom predikat IPK.
-- `screenshots/tambah-data.png` — opsional, bukti form tambah data.
-- `screenshots/validasi-ipk.png` — opsional, bukti penolakan IPK di luar rentang 0–4.
+- **Sebelum modifikasi Halaman Data:** 
+<img src="screenshots/sebelumDashboard.png" alt="Screenshot Sebelum" width="600">
+
+- **Sesudah modifikasi Halaman Data:** 
+<img src="screenshots/sebelumDashboard.png" alt="Screenshot Sebelum" width="600">
+
+- **Sebelum modifikasi Tambah Data:** 
+<img src="screenshots/sebelumForm.png" alt="Screenshot Sebelum" width="600">
+
+- **Sesudah modifikasi Tambah Data:** 
+<img src="screenshots/sesudahForm.png" alt="Screenshot Sebelum" width="600">
+
+- **Sebelum modifikasi Edit Data:** 
+<img src="screenshots/sebelumEdit.png" alt="Screenshot Sebelum" width="600">
+
+- **Sesudah modifikasi Edit Data:** 
+<img src="screenshots/sesudahEdit.png" alt="Screenshot Sebelum" width="600">
 
 > Screenshot harus diambil dari aplikasi yang benar-benar dijalankan. Placeholder screenshot tidak disertakan karena perlu diambil dari lingkungan XAMPP milik sendiri.
 
 ## Error, Penyebab, dan Perbaikan
 **Error:** `Duplicate entry ... for key 'nim'` atau `Duplicate entry ... for key 'email'`.
+<img src="screenshots/duplikat.png" alt="Screenshot Sebelum" width="600">
 
 **Penyebab:** NIM atau email yang dimasukkan sudah ada di tabel `mahasiswa`, sedangkan kolom tersebut memiliki aturan UNIQUE.
 
