@@ -1,21 +1,20 @@
 <?php
-include "koneksi.php";
-
-$nim = $_GET['nim'];
-
-$query = mysqli_query(
-    $koneksi,
-    "DELETE FROM mahasiswa WHERE nim = '$nim'"
-);
-
-if ($query) {
-    echo "<script>
-                    alert('Data mahasiswa berhasil dihapus');
-                    window.location.href = 'index.php';
-                  </script>";
-} else {
-    echo "<script>
-                    alert('Data gagal dihapus');
-                    window.history.back();
-                  </script>";
+require_once 'koneksi.php';
+// Modifikasi: hanya menerima permintaan penghapusan melalui POST.
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    header('Location: index.php');
+    exit;
 }
+$nim = trim($_POST['nim'] ?? '');
+if ($nim === '') {
+    header('Location: index.php');
+    exit;
+}
+$stmt = mysqli_prepare($koneksi, 'DELETE FROM mahasiswa WHERE nim = ?');
+mysqli_stmt_bind_param($stmt, 's', $nim);
+if (mysqli_stmt_execute($stmt) && mysqli_stmt_affected_rows($stmt) > 0) {
+    header('Location: index.php?status=hapus');
+    exit;
+}
+header('Location: index.php?status=gagal_hapus');
+exit;
