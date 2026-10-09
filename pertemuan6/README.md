@@ -43,7 +43,7 @@ tugas pertemuan 6/
 <img src="screenshots/sebelumDashboard.png" alt="Screenshot Sebelum" width="600">
 
 - **Sesudah modifikasi Halaman Data:** 
-<img src="screenshots/sebelumDashboard.png" alt="Screenshot Sebelum" width="600">
+<img src="screenshots/sesudahDashboard.png" alt="Screenshot Sebelum" width="600">
 
 - **Sebelum modifikasi Tambah Data:** 
 <img src="screenshots/sebelumForm.png" alt="Screenshot Sebelum" width="600">
