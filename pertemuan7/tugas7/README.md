@@ -42,11 +42,11 @@ tugas7/
 - Validasi: coba nama kosong atau harga/stok negatif.
 
 
-## 7. Dokumentasi Screenshot Hasil Program
+## Dokumentasi Screenshot Hasil Program
 
 Berikut adalah dokumentasi hasil implementasi Penjualan Produk menggunakan konsep Model-View-Controller (MVC) dengan PHP dan MySQL.
 
-### 7.1 Halaman Daftar & Form Tambah Produk
+### 1 Halaman Daftar & Form Tambah Produk
 
 Halaman utama menampilkan daftar produk beserta harga, stok, dan tombol untuk mengedit data produk.
 
@@ -54,7 +54,7 @@ Halaman utama menampilkan daftar produk beserta harga, stok, dan tombol untuk me
   <img src="screenshots/daftar-produk.png" width="400" alt="Halaman daftar produk">
 </p>
 
-### 7.2 Form Edit Produk
+### 2 Form Edit Produk
 
 Form edit digunakan untuk mengubah informasi produk yang sudah tersimpan di database.
 
@@ -62,7 +62,7 @@ Form edit digunakan untuk mengubah informasi produk yang sudah tersimpan di data
   <img src="screenshots/edit-produk.png" width="400" alt="Form edit produk">
 </p>
 
-### 7.3 Hasil Perubahan Data Produk
+### 3 Hasil Perubahan Data Produk
 
 Setelah perubahan disimpan, web menampilkan pesan keberhasilan dan daftar produk yang sudah diperbarui.
 
@@ -70,7 +70,7 @@ Setelah perubahan disimpan, web menampilkan pesan keberhasilan dan daftar produk
   <img src="screenshots/hasil-edit.png" width="400" alt="Hasil perubahan data produk">
 </p>
 
-### 7.4 Daftar Produk dan Database
+### 4 Daftar Produk dan Database
 
 Data produk tersimpan di database MySQL melalui phpMyAdmin.
 
