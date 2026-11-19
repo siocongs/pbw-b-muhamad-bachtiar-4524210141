@@ -4,7 +4,9 @@
 <head>
     <title>Data Mahasiswa</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?= base_url('css/style.css'); ?>">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+  </head>
+  <body>
 </head>
 
 <body>
@@ -14,7 +16,7 @@
             <a href="#">Dosen</a>
             <a href="#">Mata Kuliah</a>
         </div>
-        <div class="dashboard">
+        <div class="dashboard d-grid gap-5">
             <div class="card">
                 <h3>Mahasiswa</h3>
                 <p>120</p>
@@ -35,7 +37,7 @@
         <hr class="divider">
         <h2>Data Mahasiswa</h2>
         <a href="<?= base_url('mahasiswa/tambah'); ?>" 
-            class="btn btn-primary">
+            class="btn-solid theme-primary">
             Tambah Mahasiswa
         </a>
         <div class="table-responsive">
@@ -65,6 +67,8 @@
             </table>
         </div>
     </div>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
 </body>
 
 </html>
