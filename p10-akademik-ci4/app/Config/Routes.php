@@ -1,12 +1,17 @@
 <?php
 
-use App\Controllers\MahasiswaController;
-use App\Controllers\Dashboard;
 use CodeIgniter\Router\RouteCollection;
 
-/** @var RouteCollection $routes */
-$routes->get('/', 'Home::index');
-$routes->get('/dashboard', 'Dashboard::index');
+$routes->get('/', 'MahasiswaController::index');
+
 $routes->get('/mahasiswa', 'MahasiswaController::index');
+
 $routes->get('/mahasiswa/tambah', 'MahasiswaController::create');
 $routes->post('/mahasiswa/simpan', 'MahasiswaController::store');
+
+$routes->get('/mahasiswa/edit/(:num)', 'MahasiswaController::edit/$1');
+$routes->post('/mahasiswa/update/(:num)', 'MahasiswaController::update/$1');
+
+$routes->post('/mahasiswa/hapus/(:num)', 'MahasiswaController::delete/$1');
+
+$routes->get('/dashboard', 'DashboardController::index');
