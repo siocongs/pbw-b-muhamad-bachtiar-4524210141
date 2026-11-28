@@ -116,7 +116,6 @@ Validasi dilakukan pada Controller menggunakan `$this->validate()`. Jika validas
 
 ## 9. Dokumentasi Screenshot
 
-```html
 <p align="center">
   <img src="screenshots/01-daftar-mahasiswa.png" width="400" alt="Daftar mahasiswa">
 </p>
@@ -133,4 +132,3 @@ Validasi dilakukan pada Controller menggunakan `$this->validate()`. Jika validas
 <p align="center">
   <img src="screenshots/05-data-dihapus.png" width="400" alt="Daftar mahasiswa">
 </p>
-```
